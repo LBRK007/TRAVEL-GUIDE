@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: rgba(8, 67, 145);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    color: rgb(255, 204, 0);
+
+    .logo {
+      font-size: 30px;
+      display: flex;
+      font-weight: bold;
+      p {
+        color: white;
+        padding-left: 20px;
+      }
+    }
+    .links {
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      a:hover {
+        background-color: white;
+        color: rgba(8, 67, 145, 0.96);
+      }
+      .dropdown-content {
+        display: none;
+        background-color: white;
+        border-radius: 8px;
+
+        a {
+          display: block;
+          color: black;
+          padding: 10px;
+        }
+        a:hover {
+          background-color: rgb(230, 242, 246);
+          color: #0a5a86;
+          width: 100%;
+        }
+      }
+      .dropdown {
+        display: inline-block;
+        position: relative;
+        margin-top: 11px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: white;
+      }
+      .dropdown:hover {
+        background-color: white;
+        color: rgba(8, 67, 145, 0.96);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        width: 200px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+main {
+  .section1 {
+    position: relative;
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      text-align: center;
+      color: white;
+
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 20px;
+        padding: 20px;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .section2 {
+    background-color: rgba(227, 245, 251, 0.414);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    .detaile {
+      margin-right: 60px;
+      width: 400px;
+
+      h1 {
+        color: #0077b6;
+      }
+      p {
+        color: gray;
+        padding: 20px 0px;
+        line-height: 1.6;
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+
+        .fa-location-dot,
+        .fa-phone,
+        .fa-envelope,
+        .fa-clock {
+          color: #0077b6;
+
+          background-color: rgba(173, 216, 230, 0.61);
+          font-size: 10px;
+          padding: 10px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+        .con-info {
+          padding: 10px 0px 10px 20px;
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .info {
+      box-shadow: 0px 1px 16px rgba(97, 102, 104, 0.349);
+      width: 500px;
+      padding: 35px;
+      border-radius: 20px;
+      background-color: white;
+
+      h1 {
+        color: #0077b6;
+        padding-bottom: 20px;
+      }
+      form {
+        label {
+          padding-bottom: 10px;
+        }
+
+        .div {
+          display: flex;
+          gap: 25px;
+          margin-bottom: 20px;
+
+          .div1 {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+          }
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        select,
+        input[type="number"],
+        input[type="date"] {
+          width: 100%;
+          padding: 13px;
+          border: 1px solid rgba(128, 128, 128, 0.293);
+          border-radius: 8px;
+        }
+        input[type="email"] {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid rgba(128, 128, 128, 0.293);
+          border-radius: 8px;
+          margin: 10px 0px 20px;
+        }
+        textarea {
+          width: 100%;
+          height: 100px;
+          border: 1px solid rgba(128, 128, 128, 0.293);
+          border-radius: 8px;
+          margin: 10px 0px 20px;
+        }
+        button {
+          width: 100%;
+          padding: 15px;
+          border: none;
+          border-radius: 8px;
+          background-color: #035dd3d2;
+          font-weight: bold;
+          font-size: 16px;
+          color: white;
+          cursor: pointer;
+        }
+        button:hover{
+          background-color: #035dd3;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    padding: 50px 100px;
+    .content {
+      background-color: #084391;
+      border-radius: 20px;
+      padding: 50px;
+      color: white;
+      text-align: center;
+
+      h1 {
+        font-size: 35px;
+        padding-bottom: 10px;
+      }
+      button {
+        border: none;
+        border-radius: 50px;
+        padding: 15px 20px;
+        background-color: orange;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 17px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #023047;
+  color: white;
+  padding: 50px 100px;
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    .infos {
+      width: 600px;
+      h1 {
+        color: orange;
+      }
+      p {
+        text-align: start;
+        padding: 20px 0px;
+      }
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #0077b6;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    .links {
+      color: orange;
+      width: 300px;
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  hr {
+    margin: 20px 0px;
+  }
+  p {
+    text-align: center;
+  }
+}
