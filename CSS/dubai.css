@@ -146,6 +146,8 @@ main {
         box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.171);
         border-radius: 20px;
         background-color: white;
+        transition: 0.5s;
+
         .fa-car,
         .fa-sun,
         .fa-building {
@@ -158,6 +160,9 @@ main {
         p {
           font-size: 16px;
         }
+      }
+      .card:hover {
+        transform: translateY(-10px);
       }
     }
   }
@@ -264,6 +269,12 @@ footer {
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
+        transition: 0.5s;
+      }
+      a:hover {
+        transform: translateY(-5px);
+        background-color: orange;
+        color: black;
       }
     }
     .links {
@@ -274,6 +285,11 @@ footer {
         color: white;
         text-decoration: none;
         padding-top: 10px;
+        transition: 0.5s;
+      }
+      a:hover{
+        transform: translateX(5px);
+        color: orange;
       }
     }
   }
@@ -285,3 +301,4 @@ footer {
     text-align: center;
   }
 }
+

@@ -133,15 +133,27 @@ main {
         width: 330px;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
+        overflow: hidden;
+        transition:0.6s;
+
 
         img {
           width: 330px;
           height: 250px;
-          border-radius: 10px 10px 0px 0px;
           object-fit: cover;
+          transition: 1s;
         }
+
+        img:hover{
+          transform:scale(1.1);
+        }  
+
         .img {
           position: relative;
+          overflow: hidden;
+          border-radius: 10px 10px 0px 0px;
+
+
         }
         .tag {
           position: absolute;
@@ -199,6 +211,10 @@ main {
             }
           }
         }
+      }
+      .card:hover{
+        transform:translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
     }
   }
@@ -302,6 +318,12 @@ footer {
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
+        transition: 0.5s;
+      }
+      a:hover {
+        transform: translateY(-5px);
+        background-color: orange;
+        color: black;
       }
     }
     .links {
@@ -312,6 +334,11 @@ footer {
         color: white;
         text-decoration: none;
         padding-top: 10px;
+        transition: 0.5s;
+      }
+      a:hover{
+        transform: translateX(5px);
+        color: orange;
       }
     }
   }
@@ -323,3 +350,4 @@ footer {
     text-align: center;
   }
 }
+

@@ -128,7 +128,7 @@ main {
 
     .cards {
       display: flex;
-      gap: 50px;
+      gap: 25px;
       justify-content: center;
       margin: 50px 0px;
 
@@ -139,6 +139,8 @@ main {
         box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.297);
         border-radius: 10px;
         background-color: white;
+        transition: 0.5s;
+
         .fa-sun,
         .fa-water,
         .fa-hotel {
@@ -151,6 +153,9 @@ main {
         p {
           font-size: 16px;
         }
+      }
+      .card:hover {
+        transform: translateY(-10px);
       }
     }
   }
@@ -249,6 +254,12 @@ footer {
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
+        transition: 0.5s;
+      }
+      a:hover {
+        transform: translateY(-5px);
+        background-color: orange;
+        color: black;
       }
     }
     .links {
@@ -259,6 +270,11 @@ footer {
         color: white;
         text-decoration: none;
         padding-top: 10px;
+        transition: 0.5s;
+      }
+      a:hover{
+        transform: translateX(5px);
+        color: orange;
       }
     }
   }
@@ -270,3 +286,4 @@ footer {
     text-align: center;
   }
 }
+

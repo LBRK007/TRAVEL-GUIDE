@@ -146,18 +146,34 @@ main {
     .card {
       position: relative;
       width: 400px;
+      
+      
 
       img {
         width: 420px;
         height: 300px;
         border-radius: 20px;
         object-fit: cover;
+        transition:0.5s;
+      }
+      img:hover{
+        transform:scale(1.2);
+      }
+      .img{
+        overflow:hidden;
+        width: 420px;
+        border-radius: 20px;
+        
       }
       .content {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        bottom: 0px;
+        left: 0px;
+        padding:0px 0px 20px  20px;
         color: white;
+        transition:.5s;
+
+        
         h1 {
           font-size: 25px;
           padding-bottom: 5px;
@@ -176,6 +192,9 @@ main {
             color: yellow;
           }
         }
+      }
+      .content:hover{
+        transform:translate(8px,-8px);  
       }
     }
   }
@@ -215,9 +234,11 @@ main {
         font-size: 20px;
         border-radius: 50px;
         cursor: pointer;
+        transition:0.5s;
       }
       button:hover {
         background-color: white;
+        transform:translateY(-8px);
       }
     }
   }
@@ -251,6 +272,12 @@ footer {
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
+        transition: 0.5s;
+      }
+      a:hover {
+        transform: translateY(-5px);
+        background-color: orange;
+        color: black;
       }
     }
     .links {
@@ -261,6 +288,11 @@ footer {
         color: white;
         text-decoration: none;
         padding-top: 10px;
+        transition: 0.5s;
+      }
+      a:hover{
+        transform: translateX(5px);
+        color: orange;
       }
     }
   }
